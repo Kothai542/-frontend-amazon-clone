@@ -1,0 +1,546 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+html
+{
+    background-color:aliceblue;
+}
+
+.header {
+    background-color: rgb(19, 25, 33);
+    height: 50px;
+    color: white;
+}
+.container {
+    width: 99%;
+    height: 100%;
+    margin: auto;
+
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.logo {
+    width: 120px;
+    height: 50px;
+    background: url('https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png');
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+    overflow: hidden;
+}
+
+.dotin {
+    position: relative;
+    margin-left: -13px;
+    margin-top: -10px;
+}
+
+.border-white {
+    padding: 5px;
+    border: 1.5px solid transparent;
+}
+
+.border-white:hover {
+    border: 1.5px solid white;
+}
+
+.address-container {
+    margin-left: 10px;
+}
+
+.address-container p {
+    margin: 0;
+}
+
+.hello {
+    font-size: 13px;
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.search-container {
+    background-color: red;
+    margin-left: 15px;
+    width: 600px;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.search-container:hover {
+    outline: 3px solid orange;
+}
+
+.search-select {
+    width: 60px;
+    border: none;
+    background-color: #e6e3e3;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 3px;
+    color:black;
+    font-size: 17px;
+    background-color: white;
+}
+
+.search-icon {
+    width: 50px;
+    background-color: rgb(235, 160, 94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.lang-container {
+    margin-left: 25px;
+}
+
+.lang-container p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.lang-image {
+    width: 22px;
+}
+
+.lang-image img {
+    width: 100%;
+}
+
+.login-container {
+    margin-left: 15px;
+}
+
+.login-container p {
+    margin: 0;
+}
+
+.account {
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.return-order-container {
+    width: 65px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.return-order-container p {
+    margin: 0;
+}
+
+.order {
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    width: 70px;
+}
+
+
+.cart-container {
+    font-size: 1.1rem;
+    display: flex;
+}
+.card-product-nested-card
+{
+  margin: 10px;
+}
+
+.nav {
+    height: 40px;
+    background-color: #232f3d;
+    margin: 0;
+}
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.container-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 15px;
+    color: white;
+    list-style: none;
+}
+
+.container-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+
+.nav-right-image-amazon-prime img {
+    width: 100%;
+    height: 100%;
+}
+.prime-image {
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    color:black;
+    margin-left: -10px;
+    transition: display 1s;
+    padding: 10px;
+}
+
+.prime-image-hover:hover .prime-image {
+    transition: display 1s;
+    display: block;
+}
+
+
+
+.prime-image img {
+    height:100%;
+    width:100%;
+}
+
+
+
+.image-container {
+    position: relative;
+    overflow-x: scroll;
+}
+
+.image-list {
+    display: flex;
+}
+
+.image-item {
+    min-width: 100%;
+    height: 600px;
+
+}
+.image-container {
+    position: relative;
+}
+
+.image-list {
+    display: flex;
+   
+}
+
+.image-item {
+    min-width: 100%;
+    height: 600px;
+    transition: transform 0.3s;
+
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-btn-container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    top:-350px;
+   
+    
+}
+.card-product-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+
+}
+.card-product{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 310px;
+   
+    margin-top:50px;
+    padding: 5px;
+}
+.card-product h2{
+    margin: 0;
+    padding: 10px;
+    
+}
+
+.card-product-nested-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+.card-nested p{
+    margin: 5px;
+}
+.card-nested img {
+    width: 128px;
+    height: 102px;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-left: 3px;
+
+}
+.card-product-btn{
+    font-size: 14px;
+    align-self: flex-start;
+    margin: 7px 10px; 
+    padding-left: 0;
+    background-color: transparent;
+    border:none;
+    color:cornflowerblue;
+}
+.card-product-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: red;
+}
+.deal{
+    margin-left: 10px;
+    margin-top: 20px;
+    color:cornflowerblue;
+    font-size: 18px;
+}
+.deal:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+    color: red;
+}
+
+
+
+.today_deals_container{
+    margin: 25px;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-top:50px;
+
+   
+    
+}
+.today_deals_heading{
+    display: flex;
+    align-items: center;
+    padding: 2px 20px;
+    background-color: white;
+
+}
+
+
+.today_deals_product_container{
+    
+    height: 300px;
+    position: relative;
+    background-color: white;
+}
+.mini{
+    
+    height: 400px;
+    position: relative;
+    background-color: white;
+}
+.today_deals_product_list{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+
+}
+.mini
+{
+    height: 350px;
+    width:250px;
+    padding:10px
+}
+.today_deals_product_item{
+    min-width: 250px;
+    height: 300px;
+    padding: 10px;
+    background-color:white;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.image
+{
+  height: 200px;
+  width: 220px;
+  margin-bottom: 5px;
+}
+.today_deals_product_item img
+{
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 15px;
+}
+    
+   
+
+.todayDeals_product_image{
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 15px;
+}
+.today_deals_product_item img{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.today_deals_product_item p{
+    justify-self: flex-end;
+}
+
+.discount_Contaienr a{
+    padding: 5px 10px;
+    font-size: 14px;
+    color:rgb(211, 30, 84);
+    text-decoration: none;
+}
+.discount_Contaienr a:first-child{
+    background-color: rgb(211, 30, 84);
+    padding: 5px 10px;
+    color:white;
+    font-weight: 550;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.today_deals_btn_container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+   
+}
+.today_deal_btn{
+    padding: 40px 10px;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(255,255,255,0.4);
+}
+.top
+{
+ height: 50px;
+ width: 100%;
+ background-color:#454A52;
+ margin-top: 50px;
+}
+
+.top p
+{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.foot
+{
+    background-color: #232f3d;
+    padding:70px 0px;
+   
+}
+.container-foot
+{
+ 
+ background-color:#232f3d;
+ margin: auto;
+}
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer h4
+{
+    color:white;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+ul
+{
+
+    list-style: none;
+}
+.footer-col
+{
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin: 40px;
+
+}
+.footer-col ul li
+{
+    margin: 10px;
+}
+.footer-col ul li a
+{
+    text-decoration: none;
+    color:white;
+    font-size:16px;
+}
+.footer-col ul li a:hover
+{
+    text-decoration: underline;
+}
+.ti
+{
+    width:"100%";
+    height:"300px";
+    padding: 20px;
+
+
+}
